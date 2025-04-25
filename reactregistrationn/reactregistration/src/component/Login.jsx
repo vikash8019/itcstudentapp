@@ -8,7 +8,7 @@ function Login() {
     const email=e.target.email.value;
     const password=e.target.password.value;
     alert(email+password);
-        const response=await fetch("http://localhost:3003/login",{
+        const response=await fetch("https://itcstudentapp-backend-4cdf.onrender.com/login",{
           method:'POST',
           body:JSON.stringify({email,password}),
           headers:{'Content-Type':'application/json'}
